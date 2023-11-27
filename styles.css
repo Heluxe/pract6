@@ -129,5 +129,82 @@ body {
     width: 100%; 
     clear: both;
   }
+
+@media (min-width: 992px) {
+  table {
+    font-size: 120%;  
+  }
+  
+  td, th {
+    font-size: 110%;
+  }
+}
+
+@media (max-width: 992px) and (min-width: 768px) {
+  table {
+    font-size: 110%;
+  }
+  
+  td, th {
+    font-size: 105%;
+  }  
+}
+
+@media (max-width: 768px) {
+  th {
+    font-size: 105%;
+  }
+}
+
+
+@media (min-width: 992px) {
+  .gallery-img {
+    width: calc(33.33% - 20px);
+    float: left; 
+  } 
+}
+
+@media (max-width: 992px) and (min-width: 768px) {
+  .gallery-img:nth-of-type(1), 
+  .gallery-img:nth-of-type(2) {
+    width: calc(50% - 20px);
+    float: left; 
+  }
+  
+  .gallery-img:nth-of-type(3) {
+    float: none;
+    width: 100%;
+    clear: both;
+  }  
+}
+
+@media (max-width: 768px) {
+  .gallery-img {
+    float: none;
+    width: 100%;
+    clear: both; 
+  }
+}
+
+
+@media (min-width: 992px) {
+  .shopping, 
+  .dessert {
+    width: calc(50% - 20px);
+    float: left;    
+  } 
+}
+
+@media (max-width: 992px) {
+  .shopping,
+  .dessert {
+    float: none;
+    width: 100%;
+  }
+  
+  .dessert {
+    clear: both; 
+  }
+}
   
 }
