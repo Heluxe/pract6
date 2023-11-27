@@ -42,4 +42,92 @@ body {
     .col-sm-12 {
         width: 100%;
     }
+} 
+{
+  font-family: Arial, sans-serif; 
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.bio-section {
+  border: 1px solid #333;
+  padding: 20px;
+  margin: 10px;
+}
+
+#basic {
+  background: lightgray;
+}
+
+#child {
+  background: lightblue;  
+}
+
+#school { 
+  background: lightgreen;
+}
+
+#unschool {
+  background: lightyellow;
+}
+
+#university {
+  background: lightpink; 
+}
+
+/* Adaptive Layout */
+
+@media (min-width: 992px) {
+
+  .bio-section {
+    width: calc(20% - 20px);
+  }
+  
+  #basic, #child, #school {
+    float: left; 
+    clear: none; 
+  }
+  
+  #unschool, #university {
+    float: right;
+    clear: none; 
+  }
+  
+}
+
+@media (max-width: 992px) and (min-width: 768px) {
+
+  .bio-section {
+    width: calc(50% - 20px);
+  }  
+
+  #basic, #child {
+    float: left;
+    clear: none; 
+  }
+
+  #school, #unschool  {
+    float: right; 
+    clear: none;
+  }
+  
+  #university {
+    float: none;  
+    clear: both;
+  }
+  
+}
+
+@media (max-width: 768px) {
+
+  .bio-section {
+    float: none;
+    width: 100%; 
+    clear: both;
+  }
+  
 }
